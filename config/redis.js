@@ -13,7 +13,7 @@ const connectRedis = async () => {
     })
 
     redisClient.on('connect', function () {
-        console.log(`Radis connected ${redisClient.connected}`)
+        console.log(`Redis connected ${redisClient.connected}`)
     }).on('error', function (error) {
         console.log(error)
     });

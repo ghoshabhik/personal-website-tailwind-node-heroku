@@ -1,0 +1,14 @@
+<%- include('./../partials/_head') %>
+<%- include('./../shared/_navbar') %>
+<div class="container mx-auto my-24" id="lightbox-container">
+    <!-- <h1 class="text-center  text-5xl font-semibold mb-10">Photography Page</h1> -->
+    <div class="bg-gray-300 dark:bg-gray-600 rounded-lg shadow-md px-2 py-10">
+        <div class="max-w-5xl flex flex-wrap justify-center items-center text-center space-x-1 space-y-1 mx-auto">
+            <% images.forEach(image=> { %>
+                <img class="w-80 rounded-lg cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-95" src=<%=image.urlFull %> alt="images">
+            <% }) %>
+        </div>
+    </div>
+</div>
+<script src="../../public/js/image.js" defer></script>
+<%- include('./../partials/_body') %>

@@ -58,13 +58,14 @@ app.use(passport.session())
 // app.use('/contact', commentsRouter)
 
 app.use('/auth', require('./routes/auth'))
+app.use('/photography', require('./routes/photography'))
 
 
 app.get('/status', cors(corsOptions), (req, res, next) => {
     res.send('UP')
 })
 app.get('/', (req, res) => {
-    console.log(req.user)
+    // console.log(req.user)
     res.render('home/index', {user: req.user})
 })
 app.get('/login', (req, res) => {
