@@ -1,0 +1,36 @@
+{
+  "name": "personal-website-ejs-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwind build src.css -o public/css/style.css",
+    "startDev": "tailwind build src.css -o public/css/style.css && nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "connect-mongo": "^4.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "slugify": "^1.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.2.9",
+    "tailwindcss": "^2.1.1"
+  }
+}
